@@ -1,0 +1,81 @@
+.hero > img {
+  margin-bottom: 60px;
+  animation: animate-hero-img 4s ease-in-out infinite;
+  animation-direction: alternate;
+}
+
+@keyframes animate-hero-img {
+  0% {
+    transform: translateX(0px) translateY(13px);
+  }
+  ,
+  100% {
+    transform: translateX(0px) translateY(-13px);
+  }
+}
+
+.hero {
+  position: relative;
+}
+
+.hero span {
+  position: absolute;
+  font-size: 22px;
+}
+
+.hero span:nth-child(2) {
+  right: 50%;
+  top: 7%;
+  transform: translate(50%, 50%);
+}
+
+.hero span:nth-child(3) {
+  right: 0;
+  margin-right: -70px;
+  bottom: 53%;
+  transform: translate(50%, 50%);
+  transform: rotate(90deg);
+}
+
+.hero span:nth-child(4) {
+  left: 0;
+  margin-left: -120px;
+  bottom: 52%;
+  transform: translate(50%, 50%);
+  transform: rotate(270deg);
+}
+
+.hero span:nth-child(5) {
+  right: 50%;
+  margin-left: -120px;
+  bottom: 20%;
+  transform: translate(50%, 50%);
+}
+
+.rotate {
+  animation: rotation 15s infinite linear;
+  position: absolute;
+  right: 100px;
+  top: 30px;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.home-button {
+  border: 1px solid #4a15bd;
+  border-radius: 4px;
+  color: #4a15bd;
+  transition: 0.35s;
+}
+
+.home-button:hover {
+  background: #4a15bd;
+  color: white;
+}

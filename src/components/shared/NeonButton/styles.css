@@ -1,0 +1,92 @@
+.neon-button {
+  overflow: hidden;
+  height: 45px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.neon-button:hover {
+  background: #4a15bd;
+  box-shadow: 0 0 5px #4a15bd, 0 0 25px #4a15bd, 0 0 50px #4a15bd,
+    0 0 200px #4a15bd;
+}
+
+.neon-button span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background: linear-gradient(90deg, transparent, #4a15bd);
+  height: 2px;
+  animation: animate-border-1 1s linear infinite;
+}
+
+@keyframes animate-border-1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.neon-button span:nth-child(2) {
+  position: absolute;
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #4a15bd);
+  animation: animate-border-2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+@keyframes animate-border-2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.neon-button span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(270deg, transparent, #4a15bd);
+  animation: animate-border-3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+@keyframes animate-border-3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.neon-button span:nth-child(4) {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #4a15bd);
+  animation: animate-border-4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+@keyframes animate-border-4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}

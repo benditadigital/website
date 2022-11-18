@@ -1,0 +1,10 @@
+.navbar {
+  position: fixed;
+  background: var(--customBlack);
+  height: 72px;
+  width: 100%;
+  z-index: 99;
+}
+
+.navbar .logo {
+}
