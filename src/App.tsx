@@ -6,12 +6,17 @@ import { UilAngleDown } from "@iconscout/react-unicons";
 import "./components/Home/Hero/styles.css";
 
 import heartEmoji from "./assets/img/home/heartEmoji.svg";
+import NeonButton from "./components/shared/NeonButton";
+
+import { FaArrowRight } from "react-icons/fa";
+import Carousel from "./components/Carousel";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <div className="navbarOffset h-[72px] bg-[#ccc]"></div>
+
       <div className="relative grid grid-cols-5 font-poppins font-extralight text-white">
         <div className="hero relative col-span-2 bg-[#4A15BD] flex justify-center ">
           <img src={alternativaLogo} width="272px" className="self-center" />
@@ -79,6 +84,59 @@ function App() {
           </div>
         </div>
       </div>
+
+      <div className="relative grid grid-cols-5 font-poppins font-extralight h-[175px] text-white receba">
+        <div className="overlay"></div>
+        <div className="col-span-3 flex justify-center flex-col items-center">
+          <div>
+            <h3 className="font-bold text-3xl">
+              Receba seu orçamento em minutos!
+            </h3>
+            <p>
+              Sem enrolação, sem burocracia, vem falar direto com um
+              especialista! 😉
+            </p>
+          </div>
+        </div>
+        <div className="flex justify-end items-center">
+          <NeonButton
+            className="py-7"
+            title="Falar com um Especialista"
+            icon={<FaArrowRight />}
+          />
+        </div>
+      </div>
+
+      <div className="relative grid grid-cols-2 gap-10 font-poppins font-extralight h-[800px] text-white bg-black justify-center items-center">
+        <div className="text-right pr-5">
+          <h3 className="text-[16x]">Prazer, bendita. 👋</h3>
+          <h2 className="text-[41px] font-medium">
+            Criamos
+            <br />
+            <strong className="font-bold">experiências únicas!</strong>
+          </h2>
+        </div>
+        <div className="pr-[250px] font-extralight text-[16x]">
+          Somos uma agência digital de origem brasileira especializada em criar
+          experiências únicas que deixam os nossos clientes tão apaixonados
+          quanto nós por aquilo que fazemos.
+          <br />
+          <br />
+          Somos experts em desenvolvimento web, criação de websites, landing
+          pages, lojas virtuais e designs para projetos de alto impacto.
+          <br />
+          <br />
+          Trabalhamos globalmente com o apoio de clientes em quatro países.
+          Todos os dias trabalhamos para que as pessoas e as empresas otimizem
+          os seus negócios. Nossa visão foca em fazer a diferença em cada
+          projeto como resultado de uma estratégia de sucesso, de acordo com as
+          tendências atuais do mercado.
+        </div>
+      </div>
+
+      <Carousel />
+
+      <div className="relative grid grid-cols-2 gap-10 font-poppins font-extralight h-[400px] text-white bg-black justify-center items-center"></div>
     </div>
   );
 }
