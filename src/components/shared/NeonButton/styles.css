@@ -1,6 +1,5 @@
 .neon-button {
   overflow: hidden;
-  height: 45px;
   position: relative;
   transition: 0.5s;
 }
