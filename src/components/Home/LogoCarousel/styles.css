@@ -1,0 +1,29 @@
+.logo-carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.logo-carousel {
+  padding: 20px;
+  margin-right: 20px !important;
+  width: 375px;
+  height: 125px;
+  background: #4a15bd;
+}
+
+.logo-carousel-wrapper {
+  background: black;
+}
+
+.logo-carousel-wrapper {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.logo-carousel-wrapper .slick-list {
+  margin: 0 -20px;
+}
+.logo-carousel-wrapper .slick-slide > div {
+  padding: 0 20px;
+}
