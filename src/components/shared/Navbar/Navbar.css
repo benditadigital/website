@@ -3,7 +3,7 @@
   background: var(--customBlack);
   height: 72px;
   width: 100%;
-  z-index: 99;
+  z-index: 4;
 }
 
 .navbar .logo {
