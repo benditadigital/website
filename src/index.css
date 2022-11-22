@@ -4,8 +4,14 @@
 
 * {
   --customBlack: #000000;
+  --benditaPurple: #4a15bd;
 }
 
 body {
   overflow-x: hidden;
+}
+
+.fix-zindex {
+  position: relative;
+  z-index: 99 !important;
 }
