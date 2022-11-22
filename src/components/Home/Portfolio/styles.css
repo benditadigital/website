@@ -1,0 +1,27 @@
+.portfolio li {
+  display: inline-block;
+  width: 100%;
+  width: 100%;
+  position: relative;
+  padding-bottom: 5px;
+}
+.portfolio li,
+.portfolio a {
+  color: #2d2d2d;
+}
+
+.portfolio li:hover,
+.portfolio a:hover {
+  color: #4a15bd;
+}
+
+.portfolio li::after {
+  border-top-style: solid;
+  border-top-width: 1px;
+  content: "";
+  border-color: #ddd;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
