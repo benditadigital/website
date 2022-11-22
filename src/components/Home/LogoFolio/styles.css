@@ -1,0 +1,13 @@
+.logo-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: 0.35s;
+  mix-blend-mode: multiply;
+}
+
+.logo-overlay:hover {
+  background: #4a15bd;
+}
