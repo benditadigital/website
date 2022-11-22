@@ -1,9 +1,8 @@
-.slick-slide {
+.carousel-wrapper .slick-slide {
   height: 500px;
 }
 
 .box {
-  //animation: scroll 10s linear infinite;
   position: relative;
   height: 500px !important;
   width: 33.333vw !important;

@@ -64,6 +64,7 @@ function Carousel() {
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
+    pauseOnHover: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -91,7 +92,11 @@ function Carousel() {
       },
     ],
   };
-  return <Slider {...settings}>{renderSlides(slides)}</Slider>;
+  return (
+    <div className="carousel-wrapper fix-zindex">
+      <Slider {...settings}>{renderSlides(slides)}</Slider>
+    </div>
+  );
 }
 
 export default Carousel;
