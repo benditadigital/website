@@ -1,0 +1,12 @@
+.sidebar a {
+  transition: 0.35s;
+}
+
+.sidebar a:hover {
+  color: var(--benditaPurple);
+}
+
+.sidebar > p {
+  transform: translate(50%, 50%);
+  transform: rotate(270deg);
+}
