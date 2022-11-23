@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "./components/shared/Navbar/Navbar";
 
 import alternativaLogo from "./assets/img/home/alternativa1.png";
@@ -8,7 +8,7 @@ import "./components/Home/Hero/styles.css";
 import heartEmoji from "./assets/img/home/heartEmoji.svg";
 import NeonButton from "./components/shared/NeonButton";
 
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaWhatsapp } from "react-icons/fa";
 import Carousel from "./components/Carousel";
 import Portfolio from "./components/Home/Portfolio";
 import AfterPortfolio from "./components/Home/AfterPortfolio";
@@ -17,10 +17,14 @@ import LogoCarousel from "./components/Home/LogoCarousel";
 import TalkToUs from "./components/Home/TalkToUs";
 import Mousey from "./components/shared/Mousey";
 import SideBar from "./components/Home/SideBar";
+import WhatsappButton from "./components/shared/WhatsappButton/WhatsappButton";
+import Introduction from "./components/Home/Introduction";
+import { useScroll } from "framer-motion";
 
 function App() {
   return (
     <div className="App">
+      <div className="transition-start"></div>
       <Navbar />
       <div className="navbarOffset h-[72px] bg-[#ccc]"></div>
 
@@ -115,35 +119,7 @@ function App() {
           </div>
         </div>
 
-        <div className="relative grid grid-cols-12 gap-10 font-poppins font-extralight h-[800px] text-white bg-black justify-center items-center">
-          <SideBar />
-          <div className="text-right pr-5 col-span-5">
-            <h3 className="text-[16x]">Prazer, bendita. 👋</h3>
-            <h2 className="text-[41px] font-medium">
-              Criamos
-              <br />
-              <strong className="font-bold">
-                <em>experiências únicas!</em>
-              </strong>
-            </h2>
-          </div>
-          <div className="pr-[250px] col-span-6 font-extralight text-[16x]">
-            Somos uma agência digital de origem brasileira especializada em
-            criar experiências únicas que deixam os nossos clientes tão
-            apaixonados quanto nós por aquilo que fazemos.
-            <br />
-            <br />
-            Somos experts em desenvolvimento web, criação de websites, landing
-            pages, lojas virtuais e designs para projetos de alto impacto.
-            <br />
-            <br />
-            Trabalhamos globalmente com o apoio de clientes em quatro países.
-            Todos os dias trabalhamos para que as pessoas e as empresas otimizem
-            os seus negócios. Nossa visão foca em fazer a diferença em cada
-            projeto como resultado de uma estratégia de sucesso, de acordo com
-            as tendências atuais do mercado.
-          </div>
-        </div>
+        <Introduction />
         <Carousel />
 
         <Portfolio />
@@ -152,6 +128,7 @@ function App() {
       <LogoFolio />
       <LogoCarousel />
       <TalkToUs />
+      <WhatsappButton />
     </div>
   );
 }
