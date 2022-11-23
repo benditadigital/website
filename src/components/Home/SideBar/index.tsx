@@ -3,9 +3,16 @@ import "./styles.css";
 
 import { FaBehance, FaInstagram } from "react-icons/fa";
 
-function SideBar() {
+interface SideBarProps {
+  bg: string;
+  color: string;
+}
+
+function SideBar(props: SideBarProps) {
+  var sidebarClassName = `sidebar font-extralight font-poppins text-right pt-[60px] col-span-1 h-[100%] flex flex-col justify-between items-center bg-${props.bg} text-${props.color} sidebar-${props.color}`;
+
   return (
-    <div className="sidebar text-right pt-[50px] col-span-1 bg-black h-[100%] flex flex-col justify-between items-center">
+    <div className={sidebarClassName}>
       <p>Contato</p>
       <Mousey />
       <div className="pb-[50px]">

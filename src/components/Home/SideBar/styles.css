@@ -1,3 +1,15 @@
+.sidebar {
+  z-index: 99;
+}
+
+.sidebar-black .mousey {
+  border-color: black;
+}
+
+.sidebar-white .mousey {
+  border-color: white;
+}
+
 .sidebar a {
   transition: 0.35s;
 }
