@@ -18,3 +18,20 @@
 .whatsapp-button:hover {
   background: #7a7a7a;
 }
+
+@keyframes animate-whatsapp-button {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+.whatsapp-button {
+  scale: 0;
+  animation-name: animate-whatsapp-button;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;
+}
