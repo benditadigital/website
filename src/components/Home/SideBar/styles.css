@@ -1,5 +1,5 @@
 .sidebar {
-  z-index: 99;
+  z-index: 3;
 }
 
 .sidebar-black .mousey {
@@ -18,7 +18,8 @@
   color: var(--benditaPurple);
 }
 
-.sidebar > p {
+.sidebar .contact {
+  position: rolative;
   transform: translate(50%, 50%);
   transform: rotate(270deg);
 }

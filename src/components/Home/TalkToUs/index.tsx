@@ -7,6 +7,8 @@ import { FaBehance, FaInstagram } from "react-icons/fa";
 
 import horizontalLogo from "../../../assets/img/shared/horizontal.png";
 import { InView, useInView } from "react-intersection-observer";
+import { calculateTranslateY } from "../../../utils/parallax";
+import { Parallax } from "react-parallax";
 
 function TalkToUs() {
   const { ref, inView, entry } = useInView();
@@ -42,29 +44,65 @@ function TalkToUs() {
               </textPath>
             </text>
           </svg>
-          <InView threshold={0.25}>
-            {({ ref, inView, entry }) => {
+          <Parallax
+            renderLayer={(percentage) => {
+              var translate = calculateTranslateY(percentage, 1);
+
               return (
-                <motion.h2
-                  ref={ref}
-                  className="text-[64px] leading-none font-semibold mb-5"
-                  initial={{ opacity: 0 }}
-                  animate={inView ? { opacity: 1 } : { opacity: 0 }}
-                  transition={{ duration: 0.8 }}
-                >
-                  Fale
-                  <br />
-                  Conosco
-                </motion.h2>
+                <InView threshold={0.25}>
+                  {({ ref, inView }) => {
+                    return (
+                      <motion.h2
+                        ref={ref}
+                        className="text-[64px] leading-none font-semibold mb-5"
+                        initial={{ opacity: 0 }}
+                        animate={inView ? { opacity: 1 } : { opacity: 0 }}
+                        transition={{ duration: 0.8 }}
+                        style={{
+                          transform: `translateX(${translate})`,
+                          transition: "100ms",
+                        }}
+                      >
+                        Fale
+                        <br />
+                        Conosco
+                      </motion.h2>
+                    );
+                  }}
+                </InView>
               );
             }}
-          </InView>
+          ></Parallax>
 
-          <div className="font-extralight text-[16x]">
-            Temos especialistas em desenvolvimento, design e marketing prontos
-            <br /> para atender a sua demanda, preencha o formulário e entramos
-            em contato o mais breve possível!
-          </div>
+          <Parallax
+            renderLayer={(percentage) => {
+              var translate = calculateTranslateY(percentage, -1);
+              return (
+                <InView threshold={0.25}>
+                  {({ ref, inView }) => {
+                    return (
+                      <motion.div
+                        ref={ref}
+                        className="font-extralight text-[16x]"
+                        initial={{ opacity: 0 }}
+                        animate={inView ? { opacity: 1 } : { opacity: 0 }}
+                        transition={{ duration: 0.8 }}
+                        style={{
+                          transform: `translateX(${translate})`,
+                          transition: "100ms",
+                        }}
+                      >
+                        Temos especialistas em desenvolvimento, design e
+                        marketing prontos
+                        <br /> para atender a sua demanda, preencha o formulário
+                        e entramos em contato o mais breve possível!
+                      </motion.div>
+                    );
+                  }}
+                </InView>
+              );
+            }}
+          ></Parallax>
 
           <div className="text-center mt-[60px]">
             <NeonButton title="Fale Conosco" className="py-3" />

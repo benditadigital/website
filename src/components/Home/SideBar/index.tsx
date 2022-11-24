@@ -2,6 +2,8 @@ import Mousey from "../../shared/Mousey";
 import "./styles.css";
 
 import { FaBehance, FaInstagram } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { InView } from "react-intersection-observer";
 
 interface SideBarProps {
   bg: string;
@@ -13,16 +15,42 @@ function SideBar(props: SideBarProps) {
 
   return (
     <div className={sidebarClassName}>
-      <p>Contato</p>
+      <InView threshold={0.25}>
+        {({ ref, inView }) => (
+          <motion.p
+            ref={ref}
+            className={`text-${props.color} contact`}
+            initial={{ opacity: 0, marginTop: "-55px" }}
+            animate={inView ? { opacity: 1, marginTop: "0px" } : { opacity: 0 }}
+            transition={{ duration: 1 }}
+          >
+            Contato
+          </motion.p>
+        )}
+      </InView>
       <Mousey />
-      <div className="pb-[50px]">
-        <a href="#" target="_blank">
-          <FaInstagram size={23} />
-        </a>
-        <a href="#" target="_blank">
-          <FaBehance size={23} className="mt-5" />
-        </a>
-      </div>
+      <InView threshold={0.25}>
+        {({ ref, inView }) => (
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0, transform: "translateY(50px)" }}
+            animate={
+              inView
+                ? { opacity: 1, transform: "translateY(0px)" }
+                : { opacity: 0 }
+            }
+            transition={{ duration: 1 }}
+            className={`text-${props.color} pb-[80px]`}
+          >
+            <a href="#" target="_blank">
+              <FaInstagram size={23} />
+            </a>
+            <a href="#" target="_blank">
+              <FaBehance size={23} className="mt-5" />
+            </a>
+          </motion.div>
+        )}
+      </InView>
     </div>
   );
 }
