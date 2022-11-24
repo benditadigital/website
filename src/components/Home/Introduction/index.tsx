@@ -7,10 +7,10 @@ import { calculateTranslateY } from "../../../utils/parallax";
 
 export default function Introduction() {
   return (
-    <div className="relative grid grid-cols-12 gap-10 font-poppins font-extralight text-white bg-black md:min-h-[800px] justify-center items-center">
+    <div className="relative grid grid-cols-12 gap-10 font-poppins font-extralight text-white bg-black xl:min-h-[800px] justify-center items-center">
       <SideBar bg="white" color="white" />
       <div
-        className="text-center mt-[80px] md:text-right md:pr-5 col-span-12 md:col-span-5 flex flex-col "
+        className="text-center mt-[80px] xl:text-right xl:pr-5 col-span-12 xl:col-span-5 flex flex-col "
         style={{ overflow: "visible" }}
       >
         <Parallax
@@ -44,7 +44,7 @@ export default function Introduction() {
           }}
         ></Parallax>
       </div>
-      <div className="mb-[100px] md:mb-0 md:pr-[250px] col-span-12 md:col-span-6 font-extralight text-[16x]">
+      <div className="mb-[100px] xl:mb-0 xl:pr-[250px] col-span-12 xl:col-span-6 font-extralight text-[16x]">
         <Parallax
           renderLayer={(percentage) => {
             var translate = calculateTranslateY(percentage);
