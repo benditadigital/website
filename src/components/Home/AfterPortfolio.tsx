@@ -40,7 +40,7 @@ function AfterPortfolio() {
           }}
         ></Parallax>
       </div>
-      <div className="col-span-2 md:col-span-1 md:pr-[250px] text-center md:text-left font-extralight text-[16x]">
+      <div className="col-span-2 md:col-span-1 md:pr-10 lg:pr-[250px] text-center md:text-left font-extralight text-[16x]">
         <Parallax
           renderLayer={(percentage) => {
             var translate = calculateTranslateY(percentage, 1);
