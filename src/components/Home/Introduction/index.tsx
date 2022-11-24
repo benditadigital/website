@@ -7,10 +7,10 @@ import { calculateTranslateY } from "../../../utils/parallax";
 
 export default function Introduction() {
   return (
-    <div className="relative grid grid-cols-12 gap-10 font-poppins font-extralight h-[800px] text-white bg-black justify-center items-center">
+    <div className="relative grid grid-cols-12 gap-10 font-poppins font-extralight text-white bg-black md:min-h-[800px] justify-center items-center">
       <SideBar bg="white" color="white" />
       <div
-        className="text-right pr-5 col-span-5 flex flex-col"
+        className="text-center mt-[80px] md:text-right md:pr-5 col-span-12 md:col-span-5 flex flex-col "
         style={{ overflow: "visible" }}
       >
         <Parallax
@@ -44,7 +44,7 @@ export default function Introduction() {
           }}
         ></Parallax>
       </div>
-      <div className="pr-[250px] col-span-6 font-extralight text-[16x]">
+      <div className="mb-[100px] md:mb-0 md:pr-[250px] col-span-12 md:col-span-6 font-extralight text-[16x]">
         <Parallax
           renderLayer={(percentage) => {
             var translate = calculateTranslateY(percentage);
@@ -61,22 +61,25 @@ export default function Introduction() {
                       transition: "100ms",
                     }}
                   >
-                    Somos uma agência digital de origem brasileira especializada
-                    em criar experiências únicas que deixam os nossos clientes
-                    tão apaixonados quanto nós por aquilo que fazemos.
-                    <br />
-                    <br />
-                    Somos experts em desenvolvimento web, criação de websites,
-                    landing pages, lojas virtuais e designs para projetos de
-                    alto impacto.
-                    <br />
-                    <br />
-                    Trabalhamos globalmente com o apoio de clientes em quatro
-                    países. Todos os dias trabalhamos para que as pessoas e as
-                    empresas otimizem os seus negócios. Nossa visão foca em
-                    fazer a diferença em cada projeto como resultado de uma
-                    estratégia de sucesso, de acordo com as tendências atuais do
-                    mercado.
+                    <p className="px-10 text-justify">
+                      Somos uma agência digital de origem brasileira
+                      especializada em criar experiências únicas que deixam os
+                      nossos clientes tão apaixonados quanto nós por aquilo que
+                      fazemos.
+                      <br />
+                      <br />
+                      Somos experts em desenvolvimento web, criação de websites,
+                      landing pages, lojas virtuais e designs para projetos de
+                      alto impacto.
+                      <br />
+                      <br />
+                      Trabalhamos globalmente com o apoio de clientes em quatro
+                      países. Todos os dias trabalhamos para que as pessoas e as
+                      empresas otimizem os seus negócios. Nossa visão foca em
+                      fazer a diferença em cada projeto como resultado de uma
+                      estratégia de sucesso, de acordo com as tendências atuais
+                      do mercado.
+                    </p>
                   </motion.div>
                 )}
               </InView>
