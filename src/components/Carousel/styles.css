@@ -5,14 +5,12 @@
 .box {
   position: relative;
   height: 500px !important;
-  width: 33.333vw !important;
   overflow: hidden;
   display: inline-block;
 }
 
 .box img {
   transition: 1s ease;
-  width: 33.333vw !important;
   display: inline-block;
   height: 500px;
   width: 100%;
