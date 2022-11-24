@@ -19,7 +19,7 @@ import Mousey from "./components/shared/Mousey";
 import SideBar from "./components/Home/SideBar";
 import WhatsappButton from "./components/shared/WhatsappButton/WhatsappButton";
 import Introduction from "./components/Home/Introduction";
-import { useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 
 function App() {
   return (
@@ -34,7 +34,9 @@ function App() {
           <span>Marketing Digital</span>
           <span>Estratégia e Planejamento</span>
           <span>Design e Desenvolvimento criativo</span>
-          <span className="font-semibold">Bendito seja o fruto da arte.</span>
+          <span className="font-semibold">
+            <motion.div>Bendito seja o fruto da arte.</motion.div>
+          </span>
         </div>
         <div className="p-[104px] text-black col-span-3 h-[910px] bg-[#EAEAEA] relative">
           <svg

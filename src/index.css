@@ -9,6 +9,7 @@
 
 body {
   overflow-x: hidden;
+  background: black;
 }
 
 .fix-zindex {
@@ -35,4 +36,8 @@ body {
   to {
     left: -100vw;
   }
+}
+
+.react-parallax {
+  overflow: visible !important;
 }
