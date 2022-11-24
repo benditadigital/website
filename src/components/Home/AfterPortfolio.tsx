@@ -8,7 +8,7 @@ import { calculateTranslateY } from "../../utils/parallax";
 function AfterPortfolio() {
   return (
     <div className="relative grid grid-cols-2 gap-10 font-poppins font-extralight h-[300px] text-white bg-black justify-center items-center">
-      <div className="text-right pr-5">
+      <div className="col-span-2 md:col-span-1 mt-10 md:my-0 pr-5">
         <Parallax
           renderLayer={(percentage) => {
             var translate = calculateTranslateY(percentage, -1);
@@ -25,7 +25,7 @@ function AfterPortfolio() {
                       transition: "150ms",
                     }}
                   >
-                    <h2 className="text-[41px] font-medium flex gap-4 text-right justify-end">
+                    <h2 className="text-[41px] font-medium flex gap-4 text-center md:text-right justify-center md:justify-end">
                       Deu
                       <strong className="font-bold">
                         {" "}
@@ -40,7 +40,7 @@ function AfterPortfolio() {
           }}
         ></Parallax>
       </div>
-      <div className="pr-[250px] font-extralight text-[16x]">
+      <div className="col-span-2 md:col-span-1 md:pr-[250px] text-center md:text-left font-extralight text-[16x]">
         <Parallax
           renderLayer={(percentage) => {
             var translate = calculateTranslateY(percentage, 1);
