@@ -109,8 +109,8 @@ function TalkToUs() {
             <NeonButton title="Fale Conosco" className="py-3" />
           </div>
 
-          <div className="relative bg-[#4a15bd] p-10 mt-10 flex items-center justify-between">
-            <div className="flex gap-5 items-center">
+          <div className="relative bg-[#4a15bd] p-10 mt-10 grid grid-cols-12 justify-between">
+            <div className="col-span-8 lg:col-span-6 flex flex-col lg:flex-row gap-5 items-center">
               <img
                 src={horizontalLogo}
                 width="250px"
@@ -120,7 +120,7 @@ function TalkToUs() {
                 © 2022 Agência Bendita Digital
               </span>
             </div>
-            <div className="flex gap-5 items-center">
+            <div className="col-span-4 lg:col-span-6 flex gap-5 items-center justify-end">
               <a href="#" target="_blank">
                 <FaInstagram size={23} />
               </a>
