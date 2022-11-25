@@ -7,9 +7,20 @@
   --benditaPurple: #4a15bd;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   overflow-x: hidden;
   background: black;
+  overflow-y: hidden;
+}
+
+.App {
+  width: 100vw !important;
 }
 
 .fix-zindex {

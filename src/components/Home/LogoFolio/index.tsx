@@ -16,59 +16,59 @@ function LogoFolio() {
     <div>
       <div className="grid grid-cols-12 py-10 text-white font-poppins font-extralight bg-black">
         <SideBar bg="black" color="white" />
-        <div className="relative col-span-11">
+        <div className="relative col-span-12 lg:col-span-11">
           <div className="relative grid grid-cols-4 justify-center items-center">
-            <div className="flex justify-center relative">
+            <div className="col-span-2 md:col-span-1 flex justify-center relative">
               <img className="logo" src={g1} width="70%" />
               <div className="logo-overlay"></div>
             </div>
-            <div className="flex justify-center relative">
+            <div className="col-span-2 md:col-span-1 flex justify-center relative">
               <img className="logo" src={g2} width="70%" />
               <div className="logo-overlay"></div>
             </div>
-            <div className="flex justify-center relative">
+            <div className="col-span-2 md:col-span-1 flex justify-center relative">
               <img className="logo" src={g3} width="70%" />
               <div className="logo-overlay"></div>
             </div>
-            <div className="flex justify-center relative">
+            <div className="col-span-2 md:col-span-1 flex justify-center relative">
               <img className="logo" src={g4} width="70%" />
               <div className="logo-overlay"></div>
             </div>
           </div>
 
           <div className="relative grid grid-cols-4 justify-center items-center">
-            <div className="flex justify-center relative">
+            <div className="col-span-2 md:col-span-1 flex justify-center relative">
               <img className="logo" src={g1} width="70%" />
               <div className="logo-overlay"></div>
             </div>
-            <div className="flex justify-center relative">
+            <div className="col-span-2 md:col-span-1 flex justify-center relative">
               <img className="logo" src={g2} width="70%" />
               <div className="logo-overlay"></div>
             </div>
-            <div className="flex justify-center relative">
+            <div className="col-span-2 md:col-span-1 flex justify-center relative">
               <img className="logo" src={g3} width="70%" />
               <div className="logo-overlay"></div>
             </div>
-            <div className="flex justify-center relative">
+            <div className="col-span-2 md:col-span-1 flex justify-center relative">
               <img className="logo" src={g4} width="70%" />
               <div className="logo-overlay"></div>
             </div>
           </div>
 
           <div className="relative grid grid-cols-4 justify-center items-center">
-            <div className="flex justify-center relative">
+            <div className="col-span-2 md:col-span-1 flex justify-center relative">
               <img className="logo" src={g1} width="70%" />
               <div className="logo-overlay"></div>
             </div>
-            <div className="flex justify-center relative">
+            <div className="col-span-2 md:col-span-1 flex justify-center relative">
               <img className="logo" src={g2} width="70%" />
               <div className="logo-overlay"></div>
             </div>
-            <div className="flex justify-center relative">
+            <div className="col-span-2 md:col-span-1 flex justify-center relative">
               <img className="logo" src={g3} width="70%" />
               <div className="logo-overlay"></div>
             </div>
-            <div className="flex justify-center relative">
+            <div className="col-span-2 md:col-span-1 flex justify-center relative">
               <img className="logo" src={g4} width="70%" />
               <div className="logo-overlay"></div>
             </div>

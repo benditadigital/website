@@ -21,6 +21,10 @@
   padding-bottom: 100px;
 }
 
+.slick-slider {
+  overflow: hidden !important;
+}
+
 .logo-carousel-wrapper .slick-list {
   margin: 0 -20px;
 }

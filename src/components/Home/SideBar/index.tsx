@@ -11,7 +11,7 @@ interface SideBarProps {
 }
 
 function SideBar(props: SideBarProps) {
-  var sidebarClassName = `hidden md:flex sidebar font-extralight font-poppins text-right pt-[60px] col-span-1 h-[100%] flex-col justify-between items-center bg-${props.bg} text-${props.color} sidebar-${props.color}`;
+  var sidebarClassName = `hidden xl:flex sidebar font-extralight font-poppins text-right pt-[60px] col-span-1 h-[100%] flex-col justify-between items-center bg-${props.bg} text-${props.color} sidebar-${props.color}`;
 
   return (
     <div className={sidebarClassName}>

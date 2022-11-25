@@ -18,11 +18,12 @@ function TalkToUs() {
   return (
     <div className="talk-to-us grid grid-cols-12 font-poppins text-white bg-black">
       <SideBar bg="black" color="white" />
-      <div className="col-span-11 grid grid-cols-12 pb-[45px] ">
-        <div className="col-span-1"></div>
-        <div ref={ref} className="relative col-span-10">
+      <div className="col-span-12 lg:col-span-10 grid grid-cols-12 pb-[45px] ">
+        <div className="hidden md:flex md:col-span-1"></div>
+
+        <div ref={ref} className="relative col-span-12">
           <svg
-            className="rotate font-light text-white"
+            className="hidden lg:block rotate font-light text-white"
             viewBox="0 0 100 100"
             width="300"
             height="300"
@@ -54,7 +55,7 @@ function TalkToUs() {
                     return (
                       <motion.h2
                         ref={ref}
-                        className="text-[64px] leading-none font-semibold mb-5"
+                        className="px-10 md:px-0 text-[64px] leading-none font-semibold mb-5"
                         initial={{ opacity: 0 }}
                         animate={inView ? { opacity: 1 } : { opacity: 0 }}
                         transition={{ duration: 0.8 }}
@@ -83,7 +84,7 @@ function TalkToUs() {
                     return (
                       <motion.div
                         ref={ref}
-                        className="font-extralight text-[16x]"
+                        className="px-10 md:px-0 font-extralight text-[16x]"
                         initial={{ opacity: 0 }}
                         animate={inView ? { opacity: 1 } : { opacity: 0 }}
                         transition={{ duration: 0.8 }}
@@ -129,8 +130,8 @@ function TalkToUs() {
             </div>
           </div>
         </div>
-        <div className="col-span-1"></div>
       </div>
+      <div className="hidden lg:flex lg:col-span-1"></div>
     </div>
   );
 }
