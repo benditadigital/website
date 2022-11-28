@@ -1,7 +1,7 @@
 import "./components/Home/Hero/styles.css";
 
 /* Custom Components */
-import Navbar from "./components/shared/Navbar/Navbar";
+import Navbar from "./components/shared/Navbar";
 import Carousel from "./components/Carousel";
 import Portfolio from "./components/Home/Portfolio";
 import AfterPortfolio from "./components/Home/AfterPortfolio";

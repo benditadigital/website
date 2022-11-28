@@ -1,0 +1,102 @@
+.navbar {
+  position: fixed;
+  background: var(--customBlack);
+  height: 72px;
+  width: 100%;
+  z-index: 4;
+}
+
+.navbar .logo {
+}
+
+.navbar ul li {
+  position: relative;
+}
+
+.dropdown:hover + .dropdown-box {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-box:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-space {
+  height: 30px;
+  background: transparent;
+}
+
+.dropdown-body {
+  background: #101010cc;
+  border-radius: 10px;
+}
+
+.dropdown-box {
+  margin-top: 50px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s;
+  position: absolute;
+  top: -50px;
+  min-width: 100%;
+  border-radius: 10px;
+}
+
+.dropdown-box .dropdown-item {
+  padding-right: 25px;
+  padding-left: 10px;
+  display: block;
+  color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.35s;
+}
+
+.dropdown-box .dropdown-item:hover {
+  background: var(--benditaPurple);
+}
+
+.dropdown-item.unique {
+  border-radius: 10px 10px 10px 10px;
+}
+
+.dropdown-item.first {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.dropdown-item.middle {
+  border-radius: 0px 0px 0px 0px;
+}
+
+.dropdown-item.last {
+  border-radius: 0px 0px 10px 10px;
+}
+
+/* Navbar Mobile */
+.mobile-navbar {
+  position: fixed;
+  z-index: 99999 !important;
+  top: 72px;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  transition: 0.7s;
+  opacity: 0;
+}
+
+nav.active {
+  opacity: 1;
+}
+
+.mobile-dropdown:active {
+  color: blue;
+}
+
+.mobile-dropdown:active + .dropdown-box {
+  opacity: 1;
+  visibility: visible;
+}
