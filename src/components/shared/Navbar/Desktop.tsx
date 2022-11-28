@@ -1,4 +1,5 @@
 import { UilAngleDown } from "@iconscout/react-unicons";
+import { Link } from "react-router-dom";
 import NeonButton from "../NeonButton";
 
 export default function DesktopNavbar() {
@@ -25,7 +26,9 @@ export default function DesktopNavbar() {
           <div className="dropdown-box font-medium text-[13px]">
             <div className="dropdown-space"></div>
             <div className="dropdown-body">
-              <a className="dropdown-item unique">Sites</a>
+              <Link className="dropdown-item unique" to="/portfolio-sites">
+                Sites
+              </Link>
             </div>
           </div>
         </li>

@@ -13,8 +13,6 @@ import { Parallax } from "react-parallax";
 function TalkToUs() {
   const { ref, inView, entry } = useInView();
 
-  console.log(entry);
-
   return (
     <div className="talk-to-us grid grid-cols-12 font-poppins text-white bg-black">
       <SideBar bg="black" color="white" />

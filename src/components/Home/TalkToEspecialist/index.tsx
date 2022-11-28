@@ -3,7 +3,7 @@ import NeonButton from "../../shared/NeonButton";
 
 export default function TalkToEspecialist() {
   return (
-    <div className="relative grid grid-cols-5 font-poppins font-extralight min-h-[175px] text-white fix-zindex">
+    <div className="relative grid grid-cols-5 font-poppins font-extralight min-h-[175px] text-white receba fix-zindex">
       <div className="overlay"></div>
       <div className="col-span-5 md:col-span-3 my-5 md:m-0 text-center md:text-start flex justify-center flex-col items-center">
         <div>

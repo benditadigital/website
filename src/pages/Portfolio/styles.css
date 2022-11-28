@@ -1,0 +1,8 @@
+.portfolio-page img {
+  border-radius: 15px;
+  transition: 0.35s;
+}
+
+.portfolio-page img:hover {
+  transform: scale(0.9);
+}
