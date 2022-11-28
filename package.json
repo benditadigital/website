@@ -9,7 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.4",
     "@iconscout/react-unicons": "^1.1.6",
+    "@tailwindui/react": "^0.1.1",
     "circletype": "^2.3.0",
     "framer-motion": "^7.6.9",
     "react": "^18.2.0",
