@@ -28,6 +28,10 @@ body {
   z-index: 99 !important;
 }
 
+.max-zindex {
+  z-index: 999999 !important;
+}
+
 .transition-start {
   position: fixed;
   height: 100vh;
