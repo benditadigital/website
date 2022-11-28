@@ -6,7 +6,7 @@ import SideBar from "../SideBar";
 
 function Portfolio() {
   return (
-    <div className="relative grid grid-cols-12 font-poppins font-extralight text-white">
+    <div className="relative grid grid-cols-12 font-poppins font-extralight text-white fix-zindex">
       <SideBar bg="[#EAEAEA]" color="black" />
       <div className="text-center lg:text-start lg:pl-[104px] py-[304px] text-black col-span-12 lg:col-span-6 bg-[#EAEAEA] flex justify-center items-center">
         <div className="portfolio text-[38px] font-semibold">
