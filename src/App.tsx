@@ -1,5 +1,3 @@
-import "./components/Home/Hero/styles.css";
-
 /* Custom Components */
 import Navbar from "./components/shared/Navbar";
 import Portfolio from "./pages/Portfolio";

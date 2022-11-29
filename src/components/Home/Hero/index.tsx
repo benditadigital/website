@@ -1,6 +1,7 @@
 import { UilAngleDown } from "@iconscout/react-unicons";
 import alternativaLogo from "../../../assets/img/home/alternativa1.png";
 import heartEmoji from "../../../assets/img/home/heartEmoji.svg";
+import "./styles.css";
 
 export default function Hero() {
   return (
