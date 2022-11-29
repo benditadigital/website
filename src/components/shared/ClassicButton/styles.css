@@ -1,0 +1,9 @@
+.classic-button {
+  background: white;
+  color: var(--benditaPurple) !important;
+  border-radius: 15px;
+}
+
+.classic-button.variant-bottom-left {
+  border-bottom-left-radius: 0px;
+}
