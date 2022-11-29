@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 
 /* React Router */
 import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
+import ExpressWebsite from "./pages/ExpressWebsite";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
           <Route path="/portfolio-sites" element={<Portfolio />} />
+          <Route path="/sites/expresso" element={<ExpressWebsite />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -14,7 +14,9 @@ export default function DesktopNavbar() {
           <div className="dropdown-box font-medium text-[13px]">
             <div className="dropdown-space"></div>
             <div className="dropdown-body">
-              <a className="dropdown-item first">Site Expresso</a>
+              <Link className="dropdown-item first" to="/sites/expresso">
+                Site Expresso
+              </Link>
               <a className="dropdown-item last">Site Sob Demanda</a>
             </div>
           </div>
