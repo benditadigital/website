@@ -17,15 +17,21 @@ function SideBar(props: SideBarProps) {
     <div className={sidebarClassName}>
       <InView threshold={0.25}>
         {({ ref, inView }) => (
-          <motion.p
+          <motion.div
             ref={ref}
             className={`text-${props.color} contact`}
-            initial={{ opacity: 0, marginTop: "-55px" }}
-            animate={inView ? { opacity: 1, marginTop: "0px" } : { opacity: 0 }}
-            transition={{ duration: 1 }}
+            initial={{
+              opacity: 0,
+              transform: "translateY(-55px) rotate(270deg)",
+            }}
+            animate={
+              inView
+                ? { opacity: 1, transform: "translateY(0) rotate(270deg)" }
+                : { opacity: 0 }
+            }
           >
             Contato
-          </motion.p>
+          </motion.div>
         )}
       </InView>
       <Mousey />

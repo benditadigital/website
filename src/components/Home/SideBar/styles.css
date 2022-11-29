@@ -15,7 +15,5 @@
 }
 
 .sidebar .contact {
-  position: rolative;
-  transform: translate(50%, 50%);
-  transform: rotate(270deg);
+  transition: 1s !important;
 }
