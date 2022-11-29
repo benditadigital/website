@@ -1,0 +1,9 @@
+.express-website.how-it-works {
+  background-color: white;
+  color: rgb(18, 18, 18);
+}
+
+.express-website.how-it-works h5,
+.express-website.how-it-works .intro h4 {
+  color: var(--benditaPurple);
+}
