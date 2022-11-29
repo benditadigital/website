@@ -1,0 +1,12 @@
+/* Functionalities CSS */
+.functionalities {
+  background-color: white;
+}
+.functionalities h3,
+.functionalities h4,
+.functionalities p {
+  color: rgb(18, 18, 18);
+}
+.functionalities h5 {
+  color: var(--benditaPurple);
+}
