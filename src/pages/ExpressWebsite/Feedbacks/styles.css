@@ -1,0 +1,53 @@
+.express-website-feedbacks {
+  background-color: var(--benditaPurple);
+  color: white;
+}
+
+.express-website-feedbacks .feedbacks-carousel-box {
+  background-color: #fff;
+  color: black;
+  border-radius: 5px;
+}
+
+.express-website-feedbacks .feedbacks-carousel-box .top-side {
+  border-bottom: 1px solid #e1e8ed;
+}
+
+.express-website-feedbacks .feedbacks-carousel-box .site {
+  color: #697882;
+}
+
+.express-website-feedbacks .feedbacks-carousel-box .title {
+  color: #1c2022;
+}
+
+.express-website-feedbacks .feedbacks-carousel-box .feedback {
+  color: #333;
+}
+
+.express-website-feedbacks .slick-list {
+  margin: 0 -20px;
+}
+.express-website-feedbacks .slick-slide > div {
+  padding: 0 20px;
+}
+
+.express-website-feedbacks .slick-arrow.slick-prev {
+  left: -90px !important;
+  z-index: 920 !important;
+}
+.express-website-feedbacks .slick-arrow.slick-next {
+  right: -70px !important;
+  z-index: 920 !important;
+}
+
+.express-website-feedbacks .slick-next:before,
+.express-website-feedbacks .slick-prev:before {
+  z-index: 50;
+  font-size: 35px !important;
+  color: white !important;
+}
+
+.express-website-feedbacks .slick-slider {
+  overflow: visible !important;
+}
