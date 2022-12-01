@@ -1,4 +1,4 @@
-.carousel-wrapper .slick-slide {
+.home-page .carousel-wrapper .slick-slide {
   height: 500px;
 }
 
@@ -49,17 +49,17 @@
   transition: 0.25s ease;
 }
 
-.slick-prev {
+.home-page .slick-prev {
   left: 4% !important;
-  z-index: 1;
+  z-index: 3 !important;
 }
-.slick-next {
+.home-page .slick-next {
   right: 4% !important;
-  z-index: 1;
+  z-index: 3 !important;
 }
 
-.slick-next:before,
-.slick-prev:before {
-  font-size: 35px;
-  color: white;
+.home-page .slick-next:before,
+.home-page .slick-prev:before {
+  font-size: 35px !important;
+  color: white !important;
 }
