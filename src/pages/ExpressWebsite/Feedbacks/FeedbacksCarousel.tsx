@@ -1,5 +1,3 @@
-import "./styles.css";
-
 import icon1 from "../../../assets/img/expresswebsite/feedbacks/icon1.png";
 import icon2 from "../../../assets/img/expresswebsite/feedbacks/icon2.png";
 import icon3 from "../../../assets/img/expresswebsite/feedbacks/icon3.png";
@@ -96,7 +94,11 @@ function FeedbacksCarousel() {
       },
     ],
   };
-  return <Slider {...settings}>{renderSlides(slides)}</Slider>;
+  return (
+    <Slider className="feedbacks-carousel" {...settings}>
+      {renderSlides(slides)}
+    </Slider>
+  );
 }
 
 export default FeedbacksCarousel;
