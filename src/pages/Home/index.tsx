@@ -11,7 +11,7 @@ import WhatsappButton from "../../components/shared/WhatsappButton/WhatsappButto
 
 export default function Home() {
   return (
-    <div>
+    <div className="home-page">
       <div className="transition-start"></div>
       <Hero />
       <TalkToEspecialist />
