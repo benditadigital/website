@@ -4,6 +4,9 @@
   border-radius: 15px;
 }
 
+.classic-button.variant-top-left {
+  border-top-left-radius: 0px;
+}
 .classic-button.variant-bottom-left {
   border-bottom-left-radius: 0px;
 }
