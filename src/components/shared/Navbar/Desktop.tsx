@@ -17,7 +17,9 @@ export default function DesktopNavbar() {
               <Link className="dropdown-item first" to="/sites/expresso">
                 Site Expresso
               </Link>
-              <a className="dropdown-item last">Site Sob Demanda</a>
+              <Link to="/sites/complexo" className="dropdown-item last">
+                Site Sob Demanda
+              </Link>
             </div>
           </div>
         </li>

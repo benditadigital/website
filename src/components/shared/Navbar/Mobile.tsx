@@ -1,32 +1,20 @@
 import { RiArrowRightSFill, RiArrowLeftSFill } from "react-icons/ri";
 import { forwardRef, useEffect, useImperativeHandle, useState } from "react";
 import NeonButton from "../NeonButton";
+import { Link } from "react-router-dom";
 
-export const MobileNavbar = forwardRef((props: any, ref: any) => {
-  function handleCloseButton(e: any) {
-    e.preventDefault();
-    setIsOpen(false);
-  }
-  const [isOpen, setIsOpen] = useState(props.isShowing);
+/* Recoil */
+import { useRecoilState } from "recoil";
+import { isNavbarOpen } from "../../../App";
 
-  useEffect(() => {
-    setIsOpen(props.isShowing);
-  }, [props.isShowing]);
-
-  useImperativeHandle(
-    ref,
-    () => ({
-      getIsOpen: () => {
-        return isOpen;
-      },
-    }),
-    [isOpen]
-  );
+export default function MobileNavbar() {
+  const [isNavbarOpenState, setIsNavbarOpenState] =
+    useRecoilState(isNavbarOpen);
 
   return (
     <nav
       className={`mobile-navbar ${
-        isOpen ? "active" : ""
+        isNavbarOpenState ? "active" : ""
       } pb-10 gap-10 flex flex-col justify-center items-center text-white  font-medium font-poppins block md:hidden`}
     >
       <div className="flex justify-center flex-col gap-3 items-center">
@@ -34,16 +22,24 @@ export const MobileNavbar = forwardRef((props: any, ref: any) => {
           Criação de Sites
         </a>
         <hr />
-        <a className="dropdown flex flex-row items-center gap-1">
+        <Link
+          onClick={(e) => setIsNavbarOpenState(false)}
+          className="dropdown flex flex-row items-center gap-1"
+          to="/sites/expresso"
+        >
           <RiArrowRightSFill />
           SITE EXPRESS
           <RiArrowLeftSFill />
-        </a>
-        <a className="dropdown flex flex-row items-center gap-1">
+        </Link>
+        <Link
+          onClick={(e) => setIsNavbarOpenState(false)}
+          className="dropdown flex flex-row items-center gap-1"
+          to="/sites/complexo"
+        >
           <RiArrowRightSFill />
           SITE SOB MEDIDA
           <RiArrowLeftSFill />
-        </a>
+        </Link>
       </div>
 
       <div className="flex justify-center flex-col gap-3 items-center">
@@ -51,13 +47,17 @@ export const MobileNavbar = forwardRef((props: any, ref: any) => {
           Portfolio
         </a>
         <hr />
-        <a className="dropdown flex flex-row  items-center gap-1">
+        <Link
+          onClick={(e) => setIsNavbarOpenState(false)}
+          className="dropdown flex flex-row  items-center gap-1"
+          to="/portfolio-sites"
+        >
           <RiArrowRightSFill />
           SITES
           <RiArrowLeftSFill />
-        </a>
+        </Link>
       </div>
       <NeonButton title="Fale Conosco" className="py-5 mt-10" />
     </nav>
   );
-});
+}
