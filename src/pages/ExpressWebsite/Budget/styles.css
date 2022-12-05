@@ -1,0 +1,54 @@
+.budget .card {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card__classification {
+  position: absolute;
+  left: -65px;
+  top: 20px;
+  background-color: var(--benditaPurple);
+  color: white;
+  width: 200px;
+  text-align: center;
+  transform: rotate(-45deg);
+}
+
+.card__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header__icon {
+  background: var(--benditaPurple);
+  height: 85px;
+  width: 85px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__icon img {
+  max-width: 100%;
+  width: 50px;
+}
+
+.card__heading {
+  background: var(--benditaPurple);
+  text-align: center;
+}
+
+.card__heading p {
+  color: white !important;
+  display: inline;
+}
+
+.card__heading > p.large-heading {
+  font-size: 35px;
+  font-weight: 600;
+}
