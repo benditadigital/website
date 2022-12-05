@@ -1,0 +1,16 @@
+.express-website.faq {
+  background-color: var(--benditaPurple);
+  color: white;
+}
+
+.express-website.faq .disclosureButton {
+  color: var(--benditaPurple);
+}
+
+.disclosure-btn {
+  z-index: 3 !important;
+}
+
+.disclosure-pnl {
+  z-index: 1 !important;
+}
