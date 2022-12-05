@@ -29,7 +29,7 @@ body {
 }
 
 .max-zindex {
-  z-index: 999999 !important;
+  z-index: 9999 !important;
 }
 
 .transition-start {
@@ -38,7 +38,7 @@ body {
   height: 100vh;
   width: 100vw;
   background: var(--benditaPurple);
-  z-index: 9999;
+  z-index: 9999999;
   animation-name: transition-start-out;
   animation-duration: 1s;
   animation-fill-mode: forwards;

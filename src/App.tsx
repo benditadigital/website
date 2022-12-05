@@ -6,18 +6,30 @@ import Home from "./pages/Home";
 /* React Router */
 import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import ExpressWebsite from "./pages/ExpressWebsite";
+import ComplexWebsite from "./pages/ComplexWebsite";
+
+/* Recoil */
+import { RecoilRoot, atom } from "recoil";
+
+export const isNavbarOpen = atom({
+  key: "isNavbarOpen",
+  default: false,
+});
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Navbar />
-        <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<Home />} />
-          <Route path="/portfolio-sites" element={<Portfolio />} />
-          <Route path="/sites/expresso" element={<ExpressWebsite />} />
-        </Routes>
-      </BrowserRouter>
+    <div className="App font-poppins">
+      <RecoilRoot>
+        <BrowserRouter>
+          <Navbar />
+          <Routes location={location} key={location.pathname}>
+            <Route path="/" element={<Home />} />
+            <Route path="/portfolio-sites" element={<Portfolio />} />
+            <Route path="/sites/expresso" element={<ExpressWebsite />} />
+            <Route path="/sites/complexo" element={<ComplexWebsite />} />
+          </Routes>
+        </BrowserRouter>
+      </RecoilRoot>
     </div>
   );
 }
