@@ -7,7 +7,10 @@ import { calculateTranslateY } from "../../../utils/parallax";
 
 export default function Introduction() {
   return (
-    <div className="relative grid grid-cols-12 gap-10 font-poppins font-extralight text-white bg-black xl:min-h-[800px] justify-center items-center fix-zindex">
+    <div
+      id="about_us"
+      className="relative grid grid-cols-12 gap-10 font-poppins font-extralight text-white bg-black xl:min-h-[800px] justify-center items-center fix-zindex"
+    >
       <SideBar bg="black" color="white" />
       <div
         className="text-center mt-[80px] xl:text-right xl:pr-5 col-span-12 xl:col-span-5 flex flex-col "
