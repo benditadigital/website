@@ -9,11 +9,17 @@ import ExpressWebsite from "./pages/ExpressWebsite";
 import ComplexWebsite from "./pages/ComplexWebsite";
 
 /* Recoil */
-import { RecoilRoot, atom } from "recoil";
+import { RecoilRoot, atom, useRecoilState } from "recoil";
+import { useEffect } from "react";
 
 export const isNavbarOpen = atom({
   key: "isNavbarOpen",
   default: false,
+});
+
+export const currentPath = atom({
+  key: "currentPath",
+  default: "/",
 });
 
 function App() {
