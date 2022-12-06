@@ -9,7 +9,22 @@ import LogoCarousel from "../../components/Home/LogoCarousel";
 import TalkToUs from "../../components/Home/TalkToUs";
 import WhatsappButton from "../../components/shared/WhatsappButton/WhatsappButton";
 
+import { useRecoilState } from "recoil";
+import { currentPath } from "../../App";
+import { useEffect } from "react";
+
 export default function Home() {
+  const [websiteCurrentPath, setWebsiteCurrentPath] =
+    useRecoilState(currentPath);
+
+  useEffect(() => {
+    setWebsiteCurrentPath(window.location.pathname);
+  }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="home-page">
       <div className="transition-start"></div>

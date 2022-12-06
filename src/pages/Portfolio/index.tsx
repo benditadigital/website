@@ -12,7 +12,22 @@ import TalkToUs from "../../components/Home/TalkToUs";
 
 import "./styles.css";
 
+import { useRecoilState } from "recoil";
+import { currentPath } from "../../App";
+import { useEffect } from "react";
+
 export default function Portfolio() {
+  const [websiteCurrentPath, setWebsiteCurrentPath] =
+    useRecoilState(currentPath);
+
+  useEffect(() => {
+    setWebsiteCurrentPath(window.location.pathname);
+  }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="portfolio-page font-poppins">
       <div className="transition-start"></div>
