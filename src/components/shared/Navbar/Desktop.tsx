@@ -2,11 +2,23 @@ import { UilAngleDown } from "@iconscout/react-unicons";
 import { Link } from "react-router-dom";
 import NeonButton from "../NeonButton";
 
+import { useRecoilState } from "recoil";
+import { currentPath } from "../../../App";
+
 export default function DesktopNavbar() {
+  const [websiteCurrentPath, setWebsiteCurrentPath] =
+    useRecoilState(currentPath);
+
   return (
     <nav className="font-poppins hidden md:block">
       <ul className="flex items-center h-[100%] font-extralight">
-        <li className="pr-10">Sobre Nós</li>
+        <li className="pr-10">
+          {websiteCurrentPath == "/" ? (
+            <a href="#about_us">Sobre Nós</a>
+          ) : (
+            <Link to="/#about_us">Sobre Nós</Link>
+          )}
+        </li>
         <li className="flex pr-10">
           <a className="dropdown flex flex-row">
             Criação de Sites <UilAngleDown />
@@ -36,7 +48,9 @@ export default function DesktopNavbar() {
             </div>
           </div>
         </li>
-        <li>Contato</li>
+        <li>
+          <a href="#talk_to_us">Contato</a>
+        </li>
       </ul>
     </nav>
   );

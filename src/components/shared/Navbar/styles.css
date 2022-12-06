@@ -79,7 +79,7 @@
 /* Navbar Mobile */
 .mobile-navbar {
   position: fixed;
-  z-index: 99999 !important;
+  z-index: -10;
   top: 72px;
   width: 100vw;
   height: 100vh;
@@ -89,6 +89,7 @@
 }
 
 nav.active {
+  z-index: 99999;
   opacity: 1;
 }
 

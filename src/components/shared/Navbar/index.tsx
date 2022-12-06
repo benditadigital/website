@@ -11,10 +11,13 @@ import { AiOutlineCloseSquare } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { useRecoilState } from "recoil";
 import { isNavbarOpen } from "../../../App";
+import { currentPath } from "../../../App";
 
 function Navbar() {
   const [isNavbarOpenState, setIsNavbarOpenState] =
     useRecoilState(isNavbarOpen);
+
+  console.log(window.location.pathname);
 
   return (
     <div>
@@ -22,7 +25,7 @@ function Navbar() {
         className={`navbar text-white ${isNavbarOpenState ? "max-zindex" : ""}`}
       >
         <div className="p-4 mx-auto flex justify-around gap-5">
-          <Link to="/">
+          <Link onClick={(e) => setIsNavbarOpenState(false)} to="/">
             <img
               src={horizontalLogo}
               width="235px"
@@ -31,7 +34,7 @@ function Navbar() {
           </Link>
 
           <DesktopNavbar />
-          <NeonButton className="hidden md:block" title={"Fale Conosco"} />
+          <NeonButton className="hidden md:flex" title={"Fale Conosco"} />
           <button onClick={(e) => setIsNavbarOpenState(!isNavbarOpenState)}>
             {isNavbarOpenState ? (
               <AiOutlineCloseSquare size={40} color="white" />
