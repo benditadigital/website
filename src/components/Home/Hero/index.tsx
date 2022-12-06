@@ -77,9 +77,12 @@ export default function Hero() {
             <br /> É a nossa paixão, não um trabalho.
           </div>
         </div>
-        <button className="home-button text-[19px] mt-5 w-[150px] p-3 flex justify-center align-center gap-1 mx-auto">
+        <a
+          href="#about_us"
+          className="home-button text-[19px] mt-5 w-[150px] p-3 flex justify-center align-center gap-1 mx-auto"
+        >
           Explorar <UilAngleDown />
-        </button>
+        </a>
       </div>
     </div>
   );
