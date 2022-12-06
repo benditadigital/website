@@ -5,7 +5,7 @@ import diamond from "./assets/img/diamond.png";
 export default function UnderHero() {
   return (
     <section className="complex-website how-it-works font-poppins py-10">
-      <div className="container max-w-[1180px] mx-auto mb-[80px]">
+      <div className="container max-w-[1180px] mx-auto mb-[50px]">
         <div className="text-center py-10">
           <h5 className="text-[15px] font-normal mb-3">
             Criação e Desenvolvimento de Sites Profissionais
@@ -14,8 +14,8 @@ export default function UnderHero() {
         </div>
 
         <div className="intro grid grid-cols-3 pb-10">
-          <div className="flex flex-col items-center text-center">
-            <img src={website} className="max-h-[80px] my-3 mb-5" />
+          <div className="flex flex-col col-span-3 md:col-span-1 my-8 items-center text-center">
+            <img src={website} className="max-h-[80px] mb-3 mb-5" />
             <h4 className="text-[30px] font-semibold leading-tight mb-6">
               Seu site à sua
               <br /> escolha
@@ -25,7 +25,7 @@ export default function UnderHero() {
               a partir de descrições e referências que são a sua cara!
             </p>
           </div>
-          <div className="flex flex-col items-center text-center">
+          <div className="flex flex-col col-span-3 md:col-span-1 my-8 items-center text-center">
             <img src={preferences} className="max-h-[80px] my-3 mb-5" />
             <h4 className="text-[30px] font-semibold leading-tight mb-6">
               Funcionalidades sob medida
@@ -36,7 +36,7 @@ export default function UnderHero() {
               mais.
             </p>
           </div>
-          <div className="flex flex-col items-center text-center">
+          <div className="flex flex-col col-span-3 md:col-span-1 my-8 items-center text-center">
             <img src={diamond} className="max-h-[80px] my-3 mb-5" />
             <h4 className="text-[30px] font-semibold leading-tight mb-6">
               E que venham os benditos frutos!

@@ -21,7 +21,7 @@ export default function WhyChooseUs() {
         </div>
 
         <div className="intro grid grid-cols-3 pb-10">
-          <div className="flex flex-col items-center text-center">
+          <div className="flex flex-col col-span-3 md:col-span-1 mb-5 items-center text-center">
             <img src={hospedagemIcon} className="max-h-[60px] my-3 mb-5" />
             <h4 className="text-[30px] font-semibold leading-tight mb-6">
               Hospedagem Premium
@@ -32,7 +32,7 @@ export default function WhyChooseUs() {
               usuário e o seu site.
             </p>
           </div>
-          <div className="flex flex-col items-center text-center">
+          <div className="flex flex-col col-span-3 md:col-span-1 mb-5 items-center text-center">
             <img src={dominioIcon} className="max-h-[60px] my-3 mb-5" />
             <h4 className="text-[30px] font-semibold leading-tight mb-6">
               Registro de Domínio Gratuito
@@ -42,7 +42,7 @@ export default function WhyChooseUs() {
               endereço estratégico, nós garantimos o domínio perfeito para você!
             </p>
           </div>
-          <div className="flex flex-col items-center text-center">
+          <div className="flex flex-col col-span-3 md:col-span-1 mb-5 items-center text-center">
             <img src={emailIcon} className="max-h-[60px] my-3 mb-5" />
             <h4 className="text-[30px] font-semibold leading-tight mb-6">
               E-mail Profissional Incluso
@@ -56,7 +56,7 @@ export default function WhyChooseUs() {
         </div>
 
         <div className="intro grid grid-cols-3 pb-10">
-          <div className="flex flex-col items-center text-center">
+          <div className="flex flex-col col-span-3 md:col-span-1 mb-5 items-center text-center">
             <img src={responsiveIcon} className="max-h-[60px] my-3 mb-5" />
             <h4 className="text-[30px] font-semibold leading-tight mb-6">
               Sites Responsivos
@@ -69,7 +69,7 @@ export default function WhyChooseUs() {
               Smartphones.
             </p>
           </div>
-          <div className="flex flex-col items-center text-center">
+          <div className="flex flex-col col-span-3 md:col-span-1 mb-5 items-center text-center">
             <img src={googleIcon} className="max-h-[60px] my-3 mb-5" />
             <h4 className="text-[30px] font-semibold leading-tight mb-6">
               Sites Otimizados para o Google
@@ -80,7 +80,7 @@ export default function WhyChooseUs() {
               entregamos já otimizado com as diretrizes do Google.
             </p>
           </div>
-          <div className="flex flex-col items-center text-center">
+          <div className="flex flex-col col-span-3 md:col-span-1 mb-5 items-center text-center">
             <img src={rocketIcon} className="max-h-[60px] my-3 mb-5" />
             <h4 className="text-[30px] font-semibold leading-tight mb-6">
               Tecnologias de Ponta
@@ -94,7 +94,7 @@ export default function WhyChooseUs() {
         </div>
 
         <div className="intro grid grid-cols-3 pb-10">
-          <div className="flex flex-col items-center text-center">
+          <div className="flex flex-col col-span-3 md:col-span-1 mb-5 items-center text-center">
             <img src={carrinhoIcon} className="max-h-[60px] my-3 mb-5" />
             <h4 className="text-[30px] font-semibold leading-tight mb-6">
               Ferramentas de Venda
@@ -106,7 +106,7 @@ export default function WhyChooseUs() {
               Integração com plataformas de pagamento digital e muuuuito mais!
             </p>
           </div>
-          <div className="flex flex-col items-center text-center">
+          <div className="flex flex-col col-span-3 md:col-span-1 mb-5 items-center text-center">
             <img src={editIcon} className="max-h-[60px] my-3 mb-5" />
             <h4 className="text-[30px] font-semibold leading-tight mb-6">
               Design Personalizado
@@ -119,7 +119,7 @@ export default function WhyChooseUs() {
               especialmente para você.
             </p>
           </div>
-          <div className="flex flex-col items-center text-center">
+          <div className="flex flex-col col-span-3 md:col-span-1 mb-5 items-center text-center">
             <img src={questionIcon} className="max-h-[60px] my-3 mb-5" />
             <h4 className="text-[30px] font-semibold leading-tight mb-6">
               Manutenção e Suporte
