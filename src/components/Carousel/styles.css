@@ -52,10 +52,12 @@
 .home-page .slick-prev {
   left: 4% !important;
   z-index: 3 !important;
+  height: 35px;
 }
 .home-page .slick-next {
   right: 4% !important;
   z-index: 3 !important;
+  height: 35px;
 }
 
 .home-page .slick-next:before,

@@ -15,26 +15,26 @@ const slides = [
   {
     index: "1",
     image: carousel1,
-    title: "The Hand of 1",
-    description: "The strongest STAND1.",
+    title: "Madame Seriziat",
+    description: "Jacques-Louis David",
   },
   {
     index: "2",
     image: carousel2,
-    title: "The Hand of 2",
-    description: "The strongest STAND2.",
+    title: "Hands",
+    description: "He Lihuai",
   },
   {
     index: "3",
     image: carousel3,
-    title: "The Hand of 3",
-    description: "The strongest STAND3.",
+    title: "Italian Girl with Flowers",
+    description: "Joaquín Sorolla",
   },
   {
     index: "4",
     image: carousel4,
-    title: "The Hand of 4",
-    description: "The strongest STAND4.",
+    title: "Girl With A Pearl Earring",
+    description: "Johannes Vermeer",
   },
 ];
 
@@ -64,6 +64,8 @@ function Carousel() {
     slidesToScroll: 1,
     initialSlide: 0,
     pauseOnHover: false,
+    nextArrow: <FaAngleRight color="white" />,
+    prevArrow: <FaAngleLeft color="white" />,
     responsive: [
       {
         breakpoint: 640,
