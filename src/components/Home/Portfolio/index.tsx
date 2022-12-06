@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./styles.css";
 import alternativaLogo from "../../../assets/img/home/alternativa1.png";
 import SideBar from "../SideBar";
+import { Link } from "react-router-dom";
 
 function Portfolio() {
   return (
@@ -12,13 +13,19 @@ function Portfolio() {
         <div className="portfolio text-[38px] font-semibold">
           <ul>
             <li>
-              <a className="px-10 lg:px-0">Criação de Sites</a>
+              <Link to="/portfolio-sites" className="px-10 lg:px-0">
+                Criação de Sites
+              </Link>
             </li>
             <li>
-              <a className="px-10 lg:px-0">Landing Pages</a>
+              <Link to="/portfolio-sites" className="px-10 lg:px-0">
+                Landing Pages
+              </Link>
             </li>
             <li>
-              <a className="px-10 lg:px-0">E-Commerce</a>
+              <Link to="/portfolio-sites" className="px-10 lg:px-0">
+                E-commerce
+              </Link>
             </li>
             <li>
               <a className="px-10 lg:px-0">Identidade Visual</a>
