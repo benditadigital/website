@@ -8,7 +8,22 @@ import Functionalities from "./Functionalities";
 import Hero from "../_sharedComponents/Hero";
 import HowItWorks from "./HowItWorks";
 
+import { useRecoilState } from "recoil";
+import { currentPath } from "../../App";
+import { useEffect } from "react";
+
 export default function ExpressWebsite() {
+  const [websiteCurrentPath, setWebsiteCurrentPath] =
+    useRecoilState(currentPath);
+
+  useEffect(() => {
+    setWebsiteCurrentPath(window.location.pathname);
+  }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <div className="transition-start"></div>

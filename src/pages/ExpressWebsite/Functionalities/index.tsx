@@ -17,7 +17,7 @@ export default function Functionalities() {
           <h3 className="text-[40px] font-semibold">Funcionalidades</h3>
         </div>
         <div className="grid grid-cols-2 gap-10 mt-10">
-          <div className="grid grid-cols-12 px-10">
+          <div className="grid grid-cols-12 gap-5 px-10 col-span-2 md:col-span-1">
             <div className="col-span-2 flex justify-center items-center">
               <img src={icon01} className="max-h-[48px]" />
             </div>
@@ -32,7 +32,7 @@ export default function Functionalities() {
             </div>
           </div>
 
-          <div className="grid grid-cols-12 px-10">
+          <div className="grid grid-cols-12 gap-5 px-10 col-span-2 md:col-span-1">
             <div className="col-span-2 flex justify-center items-center">
               <img src={icon02} className="max-h-[48px]" />
             </div>
@@ -47,7 +47,7 @@ export default function Functionalities() {
             </div>
           </div>
 
-          <div className="grid grid-cols-12 px-10">
+          <div className="grid grid-cols-12 gap-5 px-10 col-span-2 md:col-span-1">
             <div className="col-span-2 flex justify-center items-center">
               <img src={icon03} className="max-h-[48px]" />
             </div>
@@ -62,7 +62,7 @@ export default function Functionalities() {
             </div>
           </div>
 
-          <div className="grid grid-cols-12 px-10">
+          <div className="grid grid-cols-12 gap-5 px-10 col-span-2 md:col-span-1">
             <div className="col-span-2 flex justify-center items-center">
               <img src={icon04} className="max-h-[48px]" />
             </div>
@@ -77,7 +77,7 @@ export default function Functionalities() {
             </div>
           </div>
 
-          <div className="grid grid-cols-12 px-10">
+          <div className="grid grid-cols-12 gap-5 px-10 col-span-2 md:col-span-1">
             <div className="col-span-2 flex justify-center items-center">
               <img src={icon05} className="max-h-[48px]" />
             </div>
@@ -92,7 +92,7 @@ export default function Functionalities() {
             </div>
           </div>
 
-          <div className="grid grid-cols-12 px-10">
+          <div className="grid grid-cols-12 gap-5 px-10 col-span-2 md:col-span-1">
             <div className="col-span-2 flex justify-center items-center">
               <img src={icon06} className="max-h-[48px]" />
             </div>

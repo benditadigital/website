@@ -11,6 +11,8 @@ import "tiny-slider/dist/tiny-slider.css";
 
 import Slider from "react-slick";
 
+import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
+
 const slides = [
   {
     index: "1",
@@ -68,6 +70,8 @@ export default function LastWebsitesCarousel() {
     slidesToScroll: 1,
     initialSlide: 0,
     pauseOnHover: false,
+    nextArrow: <HiArrowRight color="#4a15bd" className="last-websites-arrow" />,
+    prevArrow: <HiArrowLeft color="#4a15bd" className="last-websites-arrow" />,
     responsive: [
       {
         breakpoint: 640,
@@ -79,7 +83,7 @@ export default function LastWebsitesCarousel() {
     ],
   };
   return (
-    <Slider className="my- lastwebsites-carousel" {...settings}>
+    <Slider className="lastwebsites-carousel" {...settings}>
       {renderSlides(slides)}
     </Slider>
   );

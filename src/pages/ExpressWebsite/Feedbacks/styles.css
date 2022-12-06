@@ -35,16 +35,19 @@
 .express-website-feedbacks .feedbacks-carousel .slick-arrow.slick-prev {
   left: -90px !important;
   z-index: 920 !important;
+  width: 35px !important;
+  height: 35px !important;
 }
 .express-website-feedbacks .feedbacks-carousel .slick-arrow.slick-next {
   right: -70px !important;
   z-index: 920 !important;
+  width: 35px !important;
+  height: 35px !important;
 }
 
 .express-website-feedbacks .slick-next:before,
 .express-website-feedbacks .slick-prev:before {
   z-index: 50;
-  font-size: 35px !important;
   color: white !important;
 }
 
@@ -96,4 +99,36 @@
 
 .express-website-feedbacks .lastwebsites-carousel .slick-slide > div {
   padding: 10px;
+}
+
+.express-website-feedbacks .lastwebsites-carousel .slick-arrow.slick-prev {
+  left: 30px !important;
+  z-index: 3 !important;
+  width: 60px !important;
+  height: 60px !important;
+  background-color: white !important;
+  padding: 15px;
+  border-radius: 90px;
+}
+
+.express-website-feedbacks
+  .lastwebsites-carousel
+  .slick-arrow.slick-prev:hover {
+  background-color: rgb(211, 211, 211) !important;
+}
+
+.express-website-feedbacks
+  .lastwebsites-carousel
+  .slick-arrow.slick-next:hover {
+  background-color: rgb(211, 211, 211) !important;
+}
+
+.express-website-feedbacks .lastwebsites-carousel .slick-arrow.slick-next {
+  right: 30px !important;
+  z-index: 3 !important;
+  width: 60px !important;
+  height: 60px !important;
+  background-color: white !important;
+  padding: 15px;
+  border-radius: 90px;
 }

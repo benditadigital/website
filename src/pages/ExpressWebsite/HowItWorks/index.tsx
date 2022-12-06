@@ -30,7 +30,7 @@ export default function HowItWorks() {
         </div>
 
         <div className="intro grid grid-cols-3 pb-10">
-          <div className="flex flex-col items-center text-center">
+          <div className="flex flex-col col-span-3 my-10 md:col-span-1 items-center text-center">
             <img src={icon01} className="max-h-[80px] my-3 mb-5" />
             <h4 className="text-[30px] font-semibold leading-tight mb-6">
               Design e<br /> Conteúdo
@@ -40,7 +40,7 @@ export default function HowItWorks() {
               design único, para te destacar entre seus concorrentes!
             </p>
           </div>
-          <div className="flex flex-col items-center text-center">
+          <div className="flex flex-col col-span-3 my-10 md:col-span-1 items-center text-center">
             <img src={icon02} className="max-h-[80px] my-3 mb-5" />
             <h4 className="text-[30px] font-semibold leading-tight mb-6">
               Protótipo e<br /> Desenvolvimento
@@ -50,7 +50,7 @@ export default function HowItWorks() {
               modernas do mercado. Garantindo rapidez e segurança!
             </p>
           </div>
-          <div className="flex flex-col items-center text-center">
+          <div className="flex flex-col col-span-3 my-10 md:col-span-1 items-center text-center">
             <img src={icon03} className="max-h-[80px] my-3 mb-5" />
             <h4 className="text-[30px] font-semibold leading-tight mb-6">
               Lançamento e<br /> Manutenção
@@ -63,12 +63,12 @@ export default function HowItWorks() {
         </div>
 
         <div className="grid grid-cols-2 mt-10 px-10 flex justify-center items-center">
-          <div>
+          <div className="col-span-2 md:col-span-1">
             <h5>Manter o seu site rápido e seguro é nossa prioridade!</h5>
             <h4 className="text-[35px] font-semibold">Manutenção e Suporte</h4>
             <div className="grid grid-cols-12 my-5 items-center">
               <div className="col-span-3">
-                <img src={icon04} className="col-span-3 px-10 " />
+                <img src={icon04} className="px-3 md:px-10" />
               </div>
               <div className="col-span-9">
                 <h4 className="font-semibold text-[20px]">
@@ -82,7 +82,7 @@ export default function HowItWorks() {
             </div>
             <div className="grid grid-cols-12 my-5 items-center">
               <div className="col-span-3">
-                <img src={icon05} className="col-span-3 px-10 " />
+                <img src={icon05} className="px-3 md:px-10" />
               </div>
               <div className="col-span-8">
                 <h4 className="font-semibold text-[20px]">
@@ -97,11 +97,11 @@ export default function HowItWorks() {
             </div>
             <div className="grid grid-cols-12 my-5 items-center">
               <div className="col-span-3">
-                <img src={icon06} className="col-span-3 px-10 " />
+                <img src={icon06} className="px-3 md:px-10" />
               </div>
               <div className="col-span-8">
                 <h4 className="font-semibold text-[20px]">
-                  Atendimento e Suporte{" "}
+                  Atendimento e Suporte
                 </h4>
                 <p>
                   Para atender a todas as suas demandas, oferecemos atendimento
@@ -110,13 +110,13 @@ export default function HowItWorks() {
               </div>
             </div>
           </div>
-          <div className="flex justify-center items-center">
-            <img src={logo} width="480px" />
+          <div className="col-span-2 md:col-span-1 flex justify-center items-center">
+            <img src={logo} className="w-[100%] md:w-[480px]" />
           </div>
         </div>
 
         <div className="px-10 grid grid-cols-3 flex items-start gap-10 pt-10 mt-10">
-          <div className="min-h-[100px] grid grid-cols-12 items-center text-center">
+          <div className="min-h-[100px] col-span-3 md:col-span-1 grid grid-cols-12 items-center text-center">
             <img src={icon09} className="col-span-3 px-5 " />
             <div className="col-span-9 text-left">
               <h4 className="text-[20px] font-semibold leading-tight">
@@ -128,7 +128,7 @@ export default function HowItWorks() {
               </p>
             </div>
           </div>
-          <div className="min-h-[100px] grid grid-cols-12 items-center text-center">
+          <div className="min-h-[100px] col-span-3 md:col-span-1 grid grid-cols-12 items-center text-center">
             <img src={icon09} className="col-span-3 px-5" />
             <div className="col-span-9 text-left">
               <h4 className="text-[20px] font-semibold leading-tight">
@@ -140,7 +140,7 @@ export default function HowItWorks() {
               </p>
             </div>
           </div>
-          <div className="min-h-[100px] grid grid-cols-12 items-center text-center">
+          <div className="min-h-[100px] col-span-3 md:col-span-1 grid grid-cols-12 items-center text-center">
             <img src={icon09} className="col-span-3 px-5" />
             <div className="col-span-9 text-left">
               <h4 className="text-[20px] font-semibold leading-tight">

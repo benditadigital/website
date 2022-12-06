@@ -21,6 +21,7 @@ export default [
       "Suporte e Manutenção",
       "Conformidade com a LGPD",
     ],
+    footerMsg: "Cabe no seu bolso!",
   },
   {
     icon: icon2,
@@ -40,5 +41,6 @@ export default [
       "Integração com redes sociais​",
       "Conformidade com a LGPD",
     ],
+    footerMsg: "A melhor escolha!",
   },
 ];

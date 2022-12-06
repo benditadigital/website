@@ -8,7 +8,12 @@ import ReactHtmlParser, {
   convertNodeToElement,
 } from "react-html-parser";
 
-function renderQuestions(questions: Array<Object>, method: string) {
+interface Question {
+  title: string;
+  description: string;
+}
+
+function renderQuestions(questions: Array<Question>, method: string) {
   const half = Math.ceil(questions.length / 2);
   var parsedQuestions = [];
   if (method === "firstHalf") {
@@ -17,7 +22,7 @@ function renderQuestions(questions: Array<Object>, method: string) {
     parsedQuestions = questions.slice(half);
   }
 
-  return parsedQuestions.map((question: Object) => {
+  return parsedQuestions.map((question: Question) => {
     return (
       <div className="mb-1">
         <Disclosure>
@@ -58,8 +63,12 @@ export default function Faq() {
           <h3 className="font-semibold text-[40px]">Clientes e Avaliações</h3>
         </div>
         <div className="grid grid-cols-2 gap-10 pb-[80px]">
-          <div>{renderQuestions(questions, "firstHalf")}</div>
-          <div>{renderQuestions(questions, "secondHalf")}</div>
+          <div className="col-span-2 px-5 md:col-span-1 md:px-0">
+            {renderQuestions(questions, "firstHalf")}
+          </div>
+          <div className="col-span-2 px-5 md:col-span-1 md:px-0">
+            {renderQuestions(questions, "secondHalf")}
+          </div>
         </div>
         <div className="text-center flex flex-col justify-center items-center pb-[80px]">
           <span className="font-medium text-[20px]">

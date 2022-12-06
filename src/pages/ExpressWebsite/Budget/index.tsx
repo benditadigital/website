@@ -9,7 +9,17 @@ import ReactHtmlParser, {
 import ClassicButton from "../../../components/shared/ClassicButton";
 import TalkToUs from "../../../components/Home/TalkToUs";
 
-function renderCards(cards: Array<Object>) {
+interface Card {
+  type: string;
+  icon: string;
+  title: string;
+  heading: string;
+  subtitle: string;
+  traits: Array<string>;
+  footerMsg: string;
+}
+
+function renderCards(cards: Array<Card>) {
   function renderTraits(traits: Array<string>) {
     if (traits)
       return traits.map((trait: string) => (
@@ -21,7 +31,7 @@ function renderCards(cards: Array<Object>) {
   }
 
   if (cards)
-    return cards.map((card: Object) => {
+    return cards.map((card: Card) => {
       return (
         <div className="card text-white col-span-2 md:col-span-1">
           <div className="card__classification">
@@ -46,18 +56,19 @@ function renderCards(cards: Array<Object>) {
           </div>
           <div className="card_footer text-center bg-[#efefef] py-10">
             <a
+              href="https://wa.me/+5561981466888"
+              target="_blank"
               className="bg-[var(--benditaPurple)]
               font-bold text-white
               hover:text-[var(--benditaPurple)]
               hover:bg-white py-3 px-5
               rounded-3xl"
-              href=""
             >
               Peça um Orçamento
             </a>
             <br />
             <br />
-            <p className="text-[#9a9a9a]">A melhor escolha!</p>
+            <p className="text-[#9a9a9a]">{card.footerMsg}</p>
           </div>
         </div>
       );
@@ -77,10 +88,12 @@ export default function Budget() {
         <div className="grid grid-cols-2 gap-10">{renderCards(cards)}</div>
         <div className="pt-[50px] pb-[100px] text-center text-white">
           <p>E aí, vamo fechar? 😉</p>
-          <ClassicButton
-            className="variant-top-left mt-6"
-            title="Fale Conosco no WhatsApp!"
-          />
+          <div className="flex mt-5 justify-center">
+            <ClassicButton
+              title="Solicite um Orçamento"
+              className="variant-top-left"
+            />
+          </div>
         </div>
       </div>
     </section>
