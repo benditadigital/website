@@ -14,7 +14,10 @@ function TalkToUs() {
   const { ref, inView, entry } = useInView();
 
   return (
-    <div className="talk-to-us grid grid-cols-12 font-poppins text-white bg-black">
+    <div
+      id="talk_to_us"
+      className="talk-to-us grid grid-cols-12 font-poppins text-white bg-black"
+    >
       <SideBar bg="black" color="white" />
       <div className="col-span-12 lg:col-span-10 grid grid-cols-12 pb-[45px] ">
         <div className="hidden md:flex md:col-span-1"></div>
@@ -103,7 +106,7 @@ function TalkToUs() {
             }}
           ></Parallax>
 
-          <div className="text-center mt-[60px]">
+          <div className="text-center mt-[60px] flex items-center justify-center">
             <NeonButton title="Fale Conosco" className="py-3" />
           </div>
 
@@ -119,10 +122,13 @@ function TalkToUs() {
               </span>
             </div>
             <div className="col-span-4 lg:col-span-6 flex gap-5 items-center justify-end">
-              <a href="#" target="_blank">
+              <a
+                href="https://www.instagram.com/bendita.digital/"
+                target="_blank"
+              >
                 <FaInstagram size={23} />
               </a>
-              <a href="#" target="_blank">
+              <a href="https://www.behance.net/bendita" target="_blank">
                 <FaBehance size={23} />
               </a>
             </div>
