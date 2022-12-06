@@ -17,7 +17,9 @@ function SideBar(props: SideBarProps) {
     <div className={sidebarClassName}>
       <InView threshold={0.25}>
         {({ ref, inView }) => (
-          <motion.div
+          <motion.a
+            href="https://wa.me/+5561981466888"
+            target="_blank"
             ref={ref}
             className={`text-${props.color} contact`}
             initial={{
@@ -31,7 +33,7 @@ function SideBar(props: SideBarProps) {
             }
           >
             Contato
-          </motion.div>
+          </motion.a>
         )}
       </InView>
       <Mousey />
@@ -48,10 +50,13 @@ function SideBar(props: SideBarProps) {
             transition={{ duration: 1 }}
             className={`text-${props.color} pb-[80px]`}
           >
-            <a href="#" target="_blank">
+            <a
+              href="https://www.instagram.com/bendita.digital/"
+              target="_blank"
+            >
               <FaInstagram size={23} />
             </a>
-            <a href="#" target="_blank">
+            <a href="https://www.behance.net/bendita" target="_blank">
               <FaBehance size={23} className="mt-5" />
             </a>
           </motion.div>
