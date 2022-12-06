@@ -2,6 +2,9 @@
   background: white;
   color: var(--benditaPurple) !important;
   border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .classic-button.variant-top-left {
