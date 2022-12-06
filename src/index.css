@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   --customBlack: #000000;
   --benditaPurple: #4a15bd;
